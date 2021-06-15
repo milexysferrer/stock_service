@@ -1,0 +1,21 @@
+name: stock-service-E2
+
+server:
+  servlet:
+    context-path: /ws/api/stock-service-E2
+  port: 9082
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3308/test?allowPublicKeyRetrieval=true&useSSL=false
+    jdbcUrl: jdbc:mysql://localhost:3308/test?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: password
+  jpa:
+    hibernate.ddl-auto: create
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect

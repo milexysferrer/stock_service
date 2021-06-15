@@ -1,0 +1,21 @@
+ext {
+    lombokVer = "1.18.16"
+    springbootVer = "2.4.5"
+
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web:${springbootVer}")
+    compileOnly("org.projectlombok:lombok:${lombokVer}")
+    annotationProcessor("org.projectlombok:lombok:${lombokVer}")
+    implementation group: 'com.google.guava', name: 'guava', version: '30.1.1-jre'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.4.5'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.25'
+    // https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
+    implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-inline
+    testImplementation group: 'org.mockito', name: 'mockito-inline', version: '3.4.0'
+
+}
