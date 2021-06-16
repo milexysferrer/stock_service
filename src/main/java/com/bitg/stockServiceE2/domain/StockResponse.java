@@ -6,5 +6,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class StockResponse {
-    private Stock stock;
+    private Long id;
+    private Long idProduct;
+    private int quantity;
 }
