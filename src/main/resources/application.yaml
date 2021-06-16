@@ -1,8 +1,8 @@
-name: stock-service-E2
+name: stock-service
 
 server:
   servlet:
-    context-path: /ws/api/stock-service-E2
+    context-path: /ws/api/stock-service/v1
   port: 9082
 
 spring:
